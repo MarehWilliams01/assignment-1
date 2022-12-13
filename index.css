@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: url(images/Any\ other\ weather.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 5;
+}
+
+.glass-effect {
+    position: absolute;
+    background: inherit;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass-effect::before {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset 0 0 9000px rgba(255, 255, 255, 0.5);
+    filter: blur(10px);
+    background: inherit;
+    z-index: -1;
+}
+
+main {
+    position: relative;
+    background: inherit;
+    overflow: hidden;
+    z-index: 1;
+    width: 45rem;
+    height: 22rem;
+}
+
+main::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset 0 0 9000px rgba(255, 255, 255, 0.8);
+    filter: blur(10px);
+    background: inherit;
+    z-index: -1;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.weather-icon {
+    padding: 2rem;
+    margin-right: 2rem;
+    border-right: 1px solid #efeeec;
+}
+
+.weather-details {
+    padding: 0.5rem;
+    font-family: 'Poppins';
+    letter-spacing: 0.01rem;
+}
+
+.weather-details>h2 {
+    font-size: 70px;
+    color: whitesmoke;
+}
+
+.weather-state {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: #efeeec;
+}
+
+.weather-state-icon {
+    padding-right: 1.5rem;
+}
+
+.weather-attributes {
+    display: flex;
+}
+
+.weather-attribute {
+    padding-right: 2rem;
+    color: #efeeec;
+}
+
+.weather-query {
+    display: flex;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.weather-query>h4 {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #efeeec;
+}
+
+.weather-input {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height: 2rem;
+    width: 15rem;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(239, 238, 236, 0.5);
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+}
