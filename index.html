@@ -10,40 +10,47 @@
         <title>weather-app</title>
     </head>
 
-    <body>
+    <body class="app">
         <div class="glass-effect">
         <main>
             <section class="weather-query">
-                <h4>Weather in <span>Tokyo</span></h4>
+                <h4 class="city">Weather in <span>Accra</span></h4>
                 <div class="weather-input">
                     <input type="text" class="search-bar" placeholder="Search">
                     <button><img src="icons/search.png" alt="search"></button>
                 </div>
             </section>
             
-            <section class="align">
+            <section class="align loading">
                 <section class="weather-icon">
-                    <img src="icons/cloudy-100px.png" alt="Cloudy">
+                    <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="Cloudy" class="icon">
                 </section>
             
                 <section class="weather-details">
-                    <h2>20<span>&degC</span></h2>
+                    <h2><span class="temperature">20</span>&degC</h2>
                     <div class="weather-state">
                         <div class="weather-state-icon">
-                            <img src="icons/cloudy-50px.png" alt="Cloudy">
+                            <img src="https://openweathermap.org/img/wn/04n.png" alt="Cloudy" class="weather-description-icon">
                         </div>
-                        Mostly Cloudy
+                        <p class="description">Mostly Cloudy</p>
                     </div>
                     <div class="weather-attributes">
-                        <p class="weather-attribute  precipitation">Precipitation: <span id="weather-attributes-value">20%</span>
+                        <p class="weather-attribute">Humidity:
+                            <span id="weather-attributes-value">
+                                <span class="humidity">20</span>
+                                %</span>
                         </p>
-                        <p class="weather-attribute wind">Wind: <span id="weather-attributes-value">3mph</span></p>
+                        <p class="weather-attribute">Wind:
+                            <span id="weather-attributes-value">
+                                <span class="wind">3</span>
+                                km/h</span>
+                        </p>
                     </div>
                 </section>
             </section>
             </main>
         </div>
-        <script src="index.js"></script>
+        <script src="index.js" defer></script>
     </body>
 
 </html>

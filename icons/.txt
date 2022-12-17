@@ -1,7 +1,1 @@
-Cloud icon - <a target="_blank" href="https://icons8.com/icon/658/partly-cloudy-day">Partly Cloudy Day</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-Rain icon - <a target="_blank" href="https://icons8.com/icon/18563/heavy-rain">Heavy Rain</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-Sunny icon - <a target="_blank" href="https://icons8.com/icon/648/sun">Sun</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-Windy icon - <a target="_blank" href="https://icons8.com/icon/ZtDqnAzR8nPe/windy">Windy</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-Dark sky - <a target="_blank" href="https://icons8.com/icon/660/night">Night</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-Any other weather - <a target="_blank" href="https://icons8.com/icon/2854/cloud">Cloud</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 Search - <a target="_blank" href="https://icons8.com/icon/59878/search">Search</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

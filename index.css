@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins';
+    letter-spacing: 0.03rem;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     z-index: 5;
+    color: #efeeec;
 }
 
 .glass-effect {
@@ -46,8 +48,9 @@ main {
     background: inherit;
     overflow: hidden;
     z-index: 1;
-    width: 45rem;
+    width: 50rem;
     height: 22rem;
+    border-radius: 45px;
 }
 
 main::before {
@@ -84,7 +87,6 @@ main::before {
 
 .weather-details>h2 {
     font-size: 70px;
-    color: whitesmoke;
 }
 
 .weather-state {
@@ -92,9 +94,11 @@ main::before {
     align-items: center;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    color: #efeeec;
 }
 
+.description::first-letter {
+    text-transform: capitalize;
+}
 .weather-state-icon {
     padding-right: 1.5rem;
 }
@@ -105,7 +109,6 @@ main::before {
 
 .weather-attribute {
     padding-right: 2rem;
-    color: #efeeec;
 }
 
 .weather-query {
@@ -119,7 +122,6 @@ main::before {
     margin-right: 1rem;
     margin-left: 1rem;
     font-size: 2rem;
-    color: #efeeec;
 }
 
 .weather-input {
@@ -139,8 +141,30 @@ input {
 }
 
 button {
-    background-color: transparent;
+    display: flex;
+        background-color: rgba(20, 24, 33, 0.5);
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
     border: none;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
+}
+button:hover {
+    background-color: rgba(20, 24, 33, 0.8);
+}
+
+.align.loading {
+    visibility: hidden;
+    max-height: 5rem;
+    position: relative;
+}
+
+.align.loading::after {
+    visibility: visible;
+    content: "Loading....";
+    top: 0;
+    left: 2rem;
+    position: absolute;
 }
